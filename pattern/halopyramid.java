@@ -5,7 +5,7 @@ public class halopyramid {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the number of rows: ");
+        System.out.print("Enter the number of rows : ");
         int rows = sc.nextInt();
         for (int i = 1; i <= rows; i++) {
 
@@ -17,7 +17,7 @@ public class halopyramid {
                 System.out.print("*");
             }
             System.out.println();
-            
+
         }
 
     }
