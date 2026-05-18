@@ -1,4 +1,6 @@
 
+import java.util.Scanner;
+
 public class largestNumber {
 
     public static int getlargestnumber(int arr[]) {
@@ -17,7 +19,15 @@ public class largestNumber {
     }
 
     public static void main(String[] args) {
-        int arr[] = {1, 2, 3, 4, 5};
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the size of the array :");
+        int n = sc.nextInt();
+        int arr[] = new int[n];
+        System.out.println("Enter the elements of the array :");
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = sc.nextInt();
+        }
+
         int largest = getlargestnumber(arr);
         System.out.println("Largest number is: " + largest);
     }
