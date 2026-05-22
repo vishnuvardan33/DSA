@@ -1,6 +1,6 @@
 
 public class profitArray {
-    //brute force approach
+    //brute force approach//0(n2)
     //public static void profit(int arr[]) {
     //    int maxprofit = 0;
     //    for (int i = 0; i < arr.length - 1; i++) {
@@ -12,7 +12,7 @@ public class profitArray {
     //    System.out.println("Maximum profit: " + maxprofit);
     //}
 
-    //optimal approach
+    //optimal approach//0(n)
     public int maxprofit(int[] arr) {
         int buy = arr[0];
         int profit = 0;
