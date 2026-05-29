@@ -2,6 +2,8 @@
 public class BinarySearch {
 
     public static int binarySearch(int nums[], int target) {
+        // Binary Search works on sorted arrays
+        // Time Complexity: O(log n)
         int start = 0, end = nums.length - 1;
         while (start <= end) {
             int mid = (start + end) / 2;
