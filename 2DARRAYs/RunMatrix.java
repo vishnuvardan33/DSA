@@ -27,7 +27,7 @@ public class RunMatrix {
 			System.out.println();
 
 		}
-		sc.close();
+		sc.close(); vx
 
 
 	}
