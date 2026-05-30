@@ -6,9 +6,10 @@ class MajorityElementMooresAlg {
         int candidate = 0;
 
         for (int num : nums) {
-            if (count == 0) {
-                candidate = num;
-            }
+            candidate = (count == 0) ? num : candidate;
+            // if (count == 0) {
+            //     candidate = num;
+            //}
             count += (num == candidate) ? 1 : -1;
             // If the current number is the same as the candidate, increment count; otherwise, decrement count.
             //normal code
