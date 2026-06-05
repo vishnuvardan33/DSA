@@ -1,5 +1,8 @@
 
 public class LinearSearch {
+    // Linear Search works on unsorted arrays
+    // Time Complexity: O(n)
+    // Space Complexity: O(1)
 
     public static int linearSearch(int nums[], int target) {
         for (int i = 0; i < nums.length; i++) {
