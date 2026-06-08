@@ -1,26 +1,33 @@
+
 public class InsertionSortR {
-	public static void sort(int arr[]){
-		for(int i=0; i<arr.length; i++){
-			
-			int curr = arr[i];
-			int prev = i-1;
-			//find out the correct positin to insert
-			while(prev >= 0 && arr[prev] < curr){
-				arr[prev + 1] =arr[prev];
-				prev--;
-			}
-			//insertion
-			arr[prev+1]=curr;
-		}
-	}
-	public static void printarr(int arr[]){
-		for(int i=0; i<arr.length; i++){
-			System.out.print(arr[i]+" ");
-		}
-	}
-	public static void main(String args[]){
-		int arr[]={4,3,8,1,2};
-		sort(arr);
-		printarr(arr);
-	}
+
+    public static void sort(int arr[]) {
+        //insertion sort in reverse order
+        // Time Complexity: O(n^2)
+        // Space Complexity: O(1)
+        for (int i = 0; i < arr.length; i++) {
+
+            int curr = arr[i];
+            int prev = i - 1;
+            //find out the correct positin to insert
+            while (prev >= 0 && arr[prev] < curr) {
+                arr[prev + 1] = arr[prev];
+                prev--;
+            }
+            //insertion
+            arr[prev + 1] = curr;
+        }
+    }
+
+    public static void printarr(int arr[]) {
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+    }
+
+    public static void main(String args[]) {
+        int arr[] = {4, 3, 8, 1, 2};
+        sort(arr);
+        printarr(arr);
+    }
 }
