@@ -4,6 +4,8 @@ import java.util.*;
 public class halopyramid {
 
     public static void main(String[] args) {
+        // Time Complexity: O(n^2)
+        // Space Complexity: O(1)
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the number of rows : ");
         int rows = sc.nextInt();
