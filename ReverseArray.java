@@ -2,6 +2,8 @@
 public class ReverseArray {
 
     public static void main(String[] args) {
+        // Time Complexity: O(n)
+        // Space Complexity: O(1)
         int[] arr = {1, 2, 3, 4, 5};
         reverseArray(arr);
         for (int num : arr) {
