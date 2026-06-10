@@ -4,6 +4,8 @@ import java.util.*;
 public class inputTypes {
 
     public static void main(String[] args) {
+        // Time Complexity: O(1) for each input type
+        // Space Complexity: O(1) for each input type
         Scanner sc = new Scanner(System.in);
         // 1.next
         //String input = sc.next();
