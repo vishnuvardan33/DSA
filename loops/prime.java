@@ -4,6 +4,8 @@ import java.util.Scanner;
 public class prime {
 
     public static boolean isPrime(int num) {
+        // Check if the number is less than or equal to 1
+        // A prime number is a natural number greater than 1 that cannot be formed by multiplying two smaller natural numbers.
         if (num <= 1) {
             return false;
         }
