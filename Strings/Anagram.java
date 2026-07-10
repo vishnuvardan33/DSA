@@ -13,6 +13,9 @@ public class Anagram {
     }
 
     public static boolean isAnagram(String str1, String str2) {
+        // this code works for all characters including special characters and spaces
+        //takes O(n) time complexity and O(1) space complexity
+        
         if (str1.length() != str2.length()) {
             return false;
         }
@@ -33,3 +36,4 @@ public class Anagram {
         return true;
     }
 }
+w
