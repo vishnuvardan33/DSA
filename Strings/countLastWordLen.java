@@ -11,10 +11,10 @@ public class countLastWordLen {
 		int n=sentence.length();
 		int count=0; 
 		for(int i=n-1; i>=0; i--){
-			count+=1;
-			if(sentence.charAt(i)==" "){
+			if(sentence.charAt(i)==''){
 				break;
 			}
+			count++;
 		}
 		return count;
 	}
